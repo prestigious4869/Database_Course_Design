@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish Page</title>
+
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/customer/wish.css">
+
+</head>
+<body>
+    <main class="clearfix">
+        <div id="userBlock" class="clearfix">
+            <div id="userImage" class="clearfix">?</div>
+
+            <div id="userInformation" class="clearfix">
+                <p class="clearfix">@&nbsp;
+                    <span id="userName"></span><!--在此填充使用者名称-->
+                </p>
+                <p class="clearfix">#&nbsp;
+                   <span id="userID"></span><!--在此填充使用者ID-->
+                </p>
+            </div>
+
+            <ol id="userFunction" class="clearfix">
+                <li>
+                    <a id="wish" href="">购&nbsp;物&nbsp;车</a>
+                </li>
+                <li>
+                    <a id="indent" href="">订单查询</a>
+                </li>
+                <li>
+                    <a id="information" href="">修改信息</a>
+                </li>
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="exitButton" type="button">&lt;</button>
+            </form>
+        </div>
+        
+        <div id="contentBlock" class="clearfix">
+            <ol id="itemList" class="clearfix">
+                <!-- <li id="item_1">
+                    <div class="itemImage clearfix">!</div>
+                    <div class="itemInfo clearfix">
+                        <p>&nbsp;
+                            <span class="itemName"></span>在此填充商品名称
+                        </p>
+                        <p>&nbsp;$&nbsp;
+                            <span class="itemPrice"></span>在此填充商品价格
+                        </p>
+                        <p>&nbsp;%&nbsp;
+                            <span class="itemDiscount"></span>在此填充订单商品折扣
+                        </p>
+                        <p>&nbsp;&copy;&nbsp;
+                            <span class="itemShop"></span>在此填店铺名称
+                        </p>
+                        <p>&nbsp;#&nbsp;
+                            <span class="itemID"></span>在此填充商品ID
+                        </p>
+                        <p>&nbsp;=&nbsp;
+                            <span class="itemNumber">2</span>在此填充商品剩余
+                        </p>
+                    </div>
+                    <form action="" class="clearfix">
+                        <input value="1" onfocus="if (value =='1'){value =''}" onblur="if (value ==''){value='1'}" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" type="text" name="itemNum" id="" class="itemNum">
+                        <button class="deleteButton" type="button">&times;</button>
+                    </form>
+                </li> -->
+            </ol>
+
+            <form id="checkBlock" action="" class="clearfix">
+                total&nbsp;&nbsp;
+                <span id="totalPrice"></span><!--在此填充商品总价-->
+                <button id="checkButton" type="button">$</button>
+            </form>
+        </div>
+
+        <a id="topButton" href="#">#</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../static/js/customer/wish.js"></script>
+    <script src="../../static/js/public.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indent Page</title>
+
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/administrator/indent.css">
+
+</head>
+<body>
+    <main class="clearfix">
+        <form action="" id="nav" class="clearfix">
+            <input id="searchInfo" type="text" name="itemInfo">
+            <button id="searchButton" type="button">检索</button>
+        </form>
+
+        <div id="userBlock" class="clearfix">
+            <div id="userImage" class="clearfix">?</div>
+
+            <div id="userInformation" class="clearfix">
+                <p class="clearfix">@&nbsp;
+                    <span id="userName"></span><!--在此填充使用者名称-->
+                </p>
+                <p class="clearfix">#&nbsp;
+                   <span id="userID"></span><!--在此填充使用者ID-->
+                </p>
+            </div>
+
+            <ol id="userFunction" class="clearfix">
+                <li>
+                    <a id="indent" href="">订单管理</a>
+                </li>
+                <li>
+                    <a id="information" href="">修改信息</a>
+                </li>
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="exitButton" type="button">&lt;</button>
+            </form>
+        </div>
+        
+        <div id="contentBlock" class="clearfix">
+            <ol id="itemList" class="clearfix">
+                <!-- <li id="item_1">
+                    <div class="indentInfo1 clearfix">
+                        <p>&nbsp;#&nbsp;
+                            <span class="indentID"></span>在此填充订单ID
+                        </p>
+                        <p>&nbsp;date&nbsp;
+                            <span></span>在此填充订单时间
+                        </p>
+                    </div>
+                    <div class="indentInfo2 clearfix">
+                        <p>&nbsp;
+                            <span></span>在此填充商品名称
+                        </p>
+                        <p>&nbsp;#&nbsp;
+                            <span></span>在此填充商品ID
+                        </p>
+                        <p>&nbsp;$&nbsp;
+                            <span></span>在此填充商品价格
+                        </p>
+                        <p>&nbsp;num&nbsp;
+                            <span></span>在此填充商品数量
+                        </p>
+                    </div>
+                    <div class="indentInfo3 clearfix">
+                        <p>&nbsp;&copy;&nbsp;
+                            <span></span>在此填充店铺名称
+                        </p>
+                        <p>&nbsp;#&nbsp;
+                            <span></span>在此填充店铺ID
+                        </p>
+                        <p>&nbsp;@&nbsp;
+                            <span></span>在此填充顾客名称
+                        </p>
+                        <p>&nbsp;#&nbsp;
+                            <span></span>在此填充顾客id
+                        </p>
+                    </div>
+                    <div class="indentInfo4 clearfix">
+                        <p>&nbsp;%&nbsp;
+                            <span></span>在此填充订单商品折扣
+                        </p>
+                        <p>&nbsp;total&nbsp;
+                            <span></span>在此填充订单总价
+                        </p>
+                    </div>
+                </li> -->
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="nextButton" type="button">&gt;</button>
+                <button id="lastButton" type="button">&lt;</button>
+            </form>
+        </div>
+
+        <a id="topButton" href="#">#</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../static/js/administrator/indent.js"></script>
+    <script src="../../static/js/public.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/merchant/shop.css">
+
+</head>
+<body>
+    <main class="clearfix">
+        <form action="" id="nav" class="clearfix">
+            <select name="itemType" id="itemType">
+                <option value="all" selected>所有</option>
+                <option value="food">食物</option>
+                <option value="electrical">电器</option>
+                <option value="clothes">服装</option>
+                <option value="medicine">医药</option>
+                <option value="other">其他</option>
+            </select>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="text" name="priceMin">
+            <span id="priceSymbol">-</span>
+            <input type="text" name="priceMax">
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input id="searchInfo" type="text" name="itemInfo">
+            <button id="searchButton" type="button">检索</button>
+        </form>
+
+        <div id="userBlock" class="clearfix">
+            <div id="userImage" class="clearfix">?</div>
+
+            <div id="userInformation" class="clearfix">
+                <p class="clearfix">&copy;&nbsp;&nbsp;
+                    <span id="userName"></span><!--在此填充使用者名称-->
+                </p>
+                <p class="clearfix">#&nbsp;&nbsp;
+                   <span id="userID"></span><!--在此填充使用者ID-->
+                </p>
+            </div>
+
+            <ol id="userFunction" class="clearfix">
+                <li>
+                    <a id="indent" href="">订单查询</a>
+                </li>
+                <li>
+                    <a id="discount" href="">会员折扣</a>
+                </li>
+                <li>
+                    <a id="information" href="">修改信息</a>
+                </li>
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="exitButton" type="button">&lt;</button>
+            </form>
+        </div>
+
+        <div id="shopBlock" class="clearfix">
+            <div id="shopInfo" class="clearfix">
+                <p>&nbsp;O&nbsp;
+                    <span id="shopState"></span><!--在此填充店铺状态-->
+                </p>
+            </div>
+            <div id="shopDetial" class="clearfix">
+                <p></p><!--在此填充店铺简介-->
+            </div>
+        </div>
+        
+        <div id="contentBlock" class="clearfix">
+            <ol id="itemList" class="clearfix">
+                <!-- <li id="item_1">
+                    <div class="clearfix">
+                        <div class="itemImage clearfix">!</div>
+                        <form action="" class="itemKind clearfix">
+                            <select name="itemType" id="itemType">
+                                <option value="food">食物</option>
+                                <option value="electrical">电器</option>
+                                <option value="clothes">服装</option>
+                                <option value="medicine">医药</option>
+                                <option value="other" selected>其他</option>
+                            </select>
+                        </form>
+                    </div>
+
+                    <div class="itemInfo clearfix">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;$&nbsp;</p>
+                        <p>&nbsp;O&nbsp;</p>
+                        <p>&nbsp;N&nbsp;</p>
+                        <p>&nbsp;#&nbsp;</p>
+                    </div>
+                    <form action="" class="itemContent clearfix">
+                        <input type="text" class="itemName" placeholder="">
+                        <input type="text" class="itemPrice" placeholder="">
+                        <input type="text" class="itemState" placeholder="" readonly>
+                        <input type="text" class="itemNum" placeholder="">
+                        <input type="text" class="itemID" placeholder="" readonly>
+                    </form>
+                    <form class="itemDetial clearfix">
+                        <textarea name="" id="introduction" cols="30" rows="10" placeholder=""></textarea>
+                    </form>
+                    <form action="" class="buttonBlock clearfix">
+                        <button class="changeButton" type="button">&equiv;</button>
+                        <button class="deleteButton" type="button">&times;</button>
+                    </form>
+                </li> -->
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="nextButton" type="button">&gt;</button>
+                <button id="lastButton" type="button">&lt;</button>
+                <button id="addButton" type="button">+</button>
+            </form>
+        </div>
+
+        <a id="topButton" href="#">#</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../static/js/merchant/shop.js"></script>
+    <script src="../../static/js/public.js"></script>
+</body>
+</html>

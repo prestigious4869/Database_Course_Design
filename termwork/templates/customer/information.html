@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Page</title>
+
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/customer/information.css">
+
+</head>
+
+<body>
+    <main class="clearfix">
+        <div id="contentBlock" class="clearfix">
+            <div id="imageBlock" class="clearfix">
+                <div id="userImage" class="clearfix">?</div>
+
+                <p class="clearfix">#&nbsp;
+                    <span id="userID"></span><!--在此填充使用者ID-->
+                </p>
+            </div>
+
+            <div id="tipBlock" class="clearfix">
+                <p class="clearfix">name</p>
+                <p class="clearfix">password</p>
+            </div>
+
+            <form action="" id="infoBlock" class="clearfix">
+
+                <input id="nickname" type="text" placeholder="">
+                <br>
+                <input id="password1" type="password">
+                <br>
+                <input id="password2" type="password">
+                <br>
+
+                <button id="confirmButton" type="button">=</button>
+            </form>
+        </div>
+
+        <div id="userBlock" class="clearfix">
+            <div id="spareBlock"></div>
+            <ol id="userFunction" class="clearfix">
+                <li>
+                    <a id="wish" href="">购&nbsp;物&nbsp;车</a>
+                </li>
+                <li>
+                    <a id="indent" href="">订单查询</a>
+                </li>
+                <li>
+                    <a id="information" href="">修改信息</a>
+                </li>
+            </ol>
+            <form action="" class="clearfix">
+                <button id="exitButton" type="button">&lt;</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../static/js/customer/information.js"></script>
+    <script src="../../static/js/public.js"></script>
+</body>
+
+</html>

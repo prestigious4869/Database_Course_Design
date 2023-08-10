@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/customer/shopping.css">
+
+</head>
+<body>
+    <main class="clearfix">
+        <form action="" id="nav" class="clearfix">
+            <select name="pageType" id="pageType">
+                <option value="item" selected>商品</option>
+                <option value="shop">店铺</option>
+            </select>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <select name="itemType" id="itemType"><!--当pageType为店铺页面时不存在-->
+                <option value="all" selected>所有</option>
+                <option value="food">食物</option>
+                <option value="electrical">电器</option>
+                <option value="clothes">服装</option>
+                <option value="medicine">医药</option>
+                <option value="other">其他</option>
+                <!--商品种类，待补全-->
+            </select>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="text" name="priceMin"><!--当pageType为店铺页面时不存在-->
+            <span id="priceSymbol">-</span><!--当pageType为店铺页面时不存在-->
+            <input type="text" name="priceMax"><!--当pageType为店铺页面时不存在-->
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input id="searchInfo" type="text" name="itemInfo">
+            <button id="searchButton" type="button">检索</button>
+        </form>
+
+        <div id="userBlock" class="clearfix">
+            <div id="userImage" class="clearfix">?</div>
+
+            <div id="userInformation" class="clearfix">
+                <p class="clearfix">@&nbsp;
+                    <span id="userName"></span><!--在此填充使用者名称-->
+                </p>
+                <p class="clearfix">#&nbsp;
+                   <span id="userID"></span><!--在此填充使用者ID-->
+                </p>
+            </div>
+
+            <ol id="userFunction" class="clearfix">
+                <li>
+                    <a id="wish" href="">购&nbsp;物&nbsp;车</a>
+                </li>
+                <li>
+                    <a id="indent" href="">订单查询</a>
+                </li>
+                <li>
+                    <a id="information" href="">修改信息</a>
+                </li>
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="exitButton" type="button">&lt;</button>
+            </form>
+        </div>
+        
+        <div id="contentBlock" class="clearfix">
+            <ol id="itemList" class="clearfix"><!--当页pageType为店铺页面时不存在-->
+                <!-- <li id="item_1">
+                    <div class="itemImage clearfix">!</div>
+                    <div class="itemInfo clearfix">
+                        <p>&nbsp;
+                            <span class="itemName"></span>在此填充商品名称
+                        </p>
+                        <p>&nbsp;$&nbsp;
+                            <span class="itemPrice"></span>在此填充商品价格
+                        </p>
+                        <p>&nbsp;&copy;&nbsp;
+                            <span class="itemShop"></span>在此填店铺名称
+                        </p>
+                        <p>&nbsp;#&nbsp;
+                            <span class="itemID"></span>在此填充商品ID
+                        </p>
+                    </div>
+                    <div class="itemDetial clearfix">
+                        <p></p>在此填充商品简介
+                    </div>
+                    <form action="" class="clearfix">
+                        <button class="addButton" type="button">+</button>
+                    </form>
+                </li> -->
+            </ol>
+
+            <ol id="shopList" class="clearfix"><!--当pageType为商品页面时不存在-->
+                <!-- <li id="shop_1">
+                    <div class="itemImage clearfix">!</div>
+                    <div class="itemInfo clearfix">
+                        <p>&nbsp;&copy;&nbsp;
+                            <span class="shopName"></span>在此填充店铺名称
+                        </p>
+                        <p>&nbsp;#&nbsp;
+                            <span class="shopID"></span>在此填充店铺ID
+                        </p>
+                    </div>
+                    <div class="shopDetial clearfix">
+                        <p></p>在此填充店铺简介
+                    </div>
+                    <form action="" class="clearfix">
+                        <button class="visitButton" type="button">></button>
+                    </form>
+                </li> -->
+            </ol>
+
+            <form action="" class="clearfix">
+                <button id="nextButton" type="button">&gt;</button>
+                <button id="lastButton" type="button">&lt;</button>
+            </form>
+        </div>
+
+        <a id="topButton" href="">#</a>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="../../static/js/customer/shopping.js"></script>
+    <script src="../../static/js/public.js"></script>
+</body>
+</html>
